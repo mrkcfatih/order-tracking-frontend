@@ -1,0 +1,4 @@
+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
+
+git clone git@github.com:mrkcfatih/order-tracking-frontend.git
+

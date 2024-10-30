@@ -1,0 +1,136 @@
+.login-page {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.right-side {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2185b5;
+    overflow: hidden;
+}
+
+.logo {
+    max-width: 80%;
+    height: auto;
+}
+
+.auth-card {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+}
+
+.floating-papers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.paper {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    opacity: 0;
+    animation: float 5s linear infinite;
+    border-radius: 4px;
+}
+
+/* Kağıtların animasyonu */
+@keyframes float {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Kağıtların rastgele konumlandırılması ve animasyon süreleri */
+.paper:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 5s;
+}
+
+.paper:nth-child(2) {
+    left: 20%;
+    animation-delay: 2s;
+    animation-duration: 7s;
+}
+
+.paper:nth-child(3) {
+    left: 30%;
+    animation-delay: 1s;
+    animation-duration: 6s;
+}
+
+.paper:nth-child(4) {
+    left: 40%;
+    animation-delay: 3s;
+    animation-duration: 8s;
+}
+
+.paper:nth-child(5) {
+    left: 50%;
+    animation-delay: 1.5s;
+    animation-duration: 6.5s;
+}
+
+.paper:nth-child(6) {
+    left: 60%;
+    animation-delay: 2.5s;
+    animation-duration: 7.5s;
+}
+
+.paper:nth-child(7) {
+    left: 70%;
+    animation-delay: 0.5s;
+    animation-duration: 5.5s;
+}
+
+.paper:nth-child(8) {
+    left: 80%;
+    animation-delay: 3.5s;
+    animation-duration: 9s;
+}
+
+.paper:nth-child(9) {
+    left: 90%;
+    animation-delay: 2s;
+    animation-duration: 6s;
+}
+
+.paper:nth-child(10) {
+    left: 95%;
+    animation-delay: 4s;
+    animation-duration: 10s;
+}

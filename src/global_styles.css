@@ -1,0 +1,57 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import 'primeng/resources/themes/lara-light-blue/theme.css';
+@import 'primeng/resources/primeng.css';
+
+:root {
+  --primary-color: #009ef7;
+  --secondary-color: #3f4254;
+  --success-color: #50cd89;
+}
+
+body {
+  background-color: #f5f8fa;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #0095e8 100%);
+}
+
+.auth-card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 40px rgba(0,0,0,0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.topbar {
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+}
+
+.table-container {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  margin: 1rem;
+  padding: 1rem;
+}
